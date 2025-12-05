@@ -1,0 +1,13 @@
+{
+    "name": "MPI Environment",
+    "image": "ubuntu:22.04",
+    "postCreateCommand": "apt-get update && apt-get install -y mpich libmpich-dev g++",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.makefile-tools"
+            ]
+        }
+    }
+}
